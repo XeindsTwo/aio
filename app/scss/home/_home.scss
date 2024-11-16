@@ -31,11 +31,30 @@
     backdrop-filter: blur(8px);
     transition: background-color .4s, border .4s, color .4s;
 
+    &:hover {
+      background-color: $accent;
+      border-color: transparent;
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: $white;
+    }
+
     &.fill {
       background-color: $white;
       color: #161616;
 
       &:hover {
+        background-color: $accent;
+        color: $white;
+
+        svg path {
+          fill: $white;
+        }
+      }
+
+      &:focus {
         background-color: transparent;
         color: $white;
         border-color: $white;

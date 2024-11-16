@@ -1,13 +1,13 @@
 .beta {
   &__inner {
     @include bg;
-    min-height: 465px;
+    min-height: 445px;
     padding-top: 40px;
     overflow: hidden;
     border-radius: 26px;
     background-blend-mode: overlay, soft-light;
     backdrop-filter: blur(8px);
-    background-image: url("../images/beta-bg.png");
+    background-image: url("../images/beta-bg.webp");
   }
 
   &__title {
@@ -58,6 +58,10 @@
   }
 
   &__img {
-    margin-top: -70px;
+    @include objectCoverBg;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }

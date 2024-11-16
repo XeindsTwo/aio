@@ -1,3 +1,28 @@
 .dao {
+  &__inner {
+    @include bg;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 40px 50px 0;
+    background-image: url("../images/dao-bg.webp");
+    min-height: 440px;
+    border: 1px solid rgba($white, .1);
+  }
 
+  &__text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    @include objectCoverBg;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }

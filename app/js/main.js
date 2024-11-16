@@ -1,7 +1,3 @@
-import {setupMobileMenu} from './mobileMenu.js';
-
-setupMobileMenu();
-
 document.querySelectorAll(".desktop").forEach(link => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
