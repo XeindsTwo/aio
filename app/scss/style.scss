@@ -1,0 +1,18 @@
+@import 'vendor/reset';
+@import 'vendor/fonts';
+@import 'vendor/vars';
+@import 'vendor/libs';
+@import 'vendor/mixin';
+@import 'vendor/global';
+
+@import "components/header";
+@import "components/footer";
+@import "components/title-section";
+@import "components/menu-btn";
+@import "components/hashtag";
+@import "components/decors";
+
+@import "home/home";
+@import "home/beta";
+@import "home/dao";
+@import "home/contacts";

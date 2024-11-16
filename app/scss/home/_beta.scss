@@ -1,0 +1,63 @@
+.beta {
+  &__inner {
+    @include bg;
+    min-height: 465px;
+    padding-top: 40px;
+    overflow: hidden;
+    border-radius: 26px;
+    background-blend-mode: overlay, soft-light;
+    backdrop-filter: blur(8px);
+    background-image: url("../images/beta-bg.png");
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+    max-width: 735px;
+    margin: 0 auto 16px;
+    position: relative;
+    z-index: 50;
+  }
+
+  &__text {
+    max-width: 630px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 auto 32px;
+    position: relative;
+    z-index: 50;
+  }
+
+  &__link {
+    @include flex-align-center(9);
+    border-radius: 10px;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 12px 18px;
+    background: $white;
+    color: #161616;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
+    border: 1px solid transparent;
+    transition: background-color .4s, color .4s, border .4s;
+    position: relative;
+    z-index: 50;
+
+    &:hover {
+      background-color: transparent;
+      color: $white;
+      border-color: $white;
+    }
+
+    &:focus {
+      background-color: rgba($accent, .7);
+      color: $white;
+      border-color: transparent;
+    }
+  }
+
+  &__img {
+    margin-top: -70px;
+  }
+}

@@ -1,0 +1,14 @@
+.hashtag {
+  @include flex-center;
+  font-size: 16px;
+  padding: 6px 20px;
+  font-weight: 500;
+  border: 1px solid #B3B3FF;
+  background: rgba(#7070ee, .5);
+  border-radius: 32px;
+  backdrop-filter: blur(8px);
+  background-blend-mode: soft-light;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
+  margin: 0 auto 20px;
+  max-width: max-content;
+}

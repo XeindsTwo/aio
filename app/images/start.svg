@@ -1,0 +1,36 @@
+<svg width="1440" height="1188" viewBox="0 0 1440 1188" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_2012_11)">
+<ellipse cx="960" cy="-104.5" rx="812.5" ry="540" transform="rotate(90 960 -104.5)" fill="#6060FF"/>
+</g>
+<g filter="url(#filter1_f_2012_11)">
+<ellipse cx="1145" cy="-234" rx="720" ry="295" transform="rotate(90 1145 -234)" fill="#9292FF"/>
+</g>
+<g filter="url(#filter2_f_2012_11)">
+<ellipse cx="1145" cy="-234" rx="720" ry="50" transform="rotate(90 1145 -234)" fill="white"/>
+</g>
+<g filter="url(#filter3_f_2012_11)">
+<ellipse cx="1145" cy="-234" rx="720" ry="30" transform="rotate(90 1145 -234)" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_2012_11" x="-60" y="-1397" width="2040" height="2585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="240" result="effect1_foregroundBlur_2012_11"/>
+</filter>
+<filter id="filter1_f_2012_11" x="610" y="-1194" width="1070" height="1920" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_2012_11"/>
+</filter>
+<filter id="filter2_f_2012_11" x="975" y="-1074" width="340" height="1680" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2012_11"/>
+</filter>
+<filter id="filter3_f_2012_11" x="1051" y="-1018" width="188" height="1568" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="32" result="effect1_foregroundBlur_2012_11"/>
+</filter>
+</defs>
+</svg>

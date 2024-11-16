@@ -1,0 +1,49 @@
+.home {
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 1.14;
+    max-width: 555px;
+    margin: 0 auto 48px;
+  }
+
+  &__links {
+    @include flex-align-center(20);
+    justify-content: center;
+  }
+
+  &__link {
+    @include flex-align-center(8);
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: rgba(#5B5AD8, .5);
+    border: 1px solid rgba($white, .2);
+    background-blend-mode: soft-light;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
+    backdrop-filter: blur(8px);
+    transition: background-color .4s, border .4s, color .4s;
+
+    &.fill {
+      background-color: $white;
+      color: #161616;
+
+      &:hover {
+        background-color: transparent;
+        color: $white;
+        border-color: $white;
+
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

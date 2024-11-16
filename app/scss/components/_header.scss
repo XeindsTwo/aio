@@ -1,0 +1,49 @@
+.header {
+  margin: 32px 0 40px;
+
+  &__inner {
+    @include flex-align-center(12);
+    justify-content: center;
+  }
+
+  &__logo {
+    img {
+
+    }
+  }
+
+  &__list {
+    @include flex-align-center(30);
+    padding: 6px 24px;
+    border-radius: 32px;
+    border: 1px solid #B3B3FF;
+    background: #7373ec;
+    background-blend-mode: soft-light;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
+    backdrop-filter: blur(8px);
+  }
+
+  &__link {
+    @include flex-align-center(8);
+    font-size: 18px;
+    padding: 3px 3px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: color .4s, border .4s;
+    @media (max-width: 1300px) {
+      max-width: max-content;
+    }
+    @include r($sm) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: rgba($white, .5);
+    }
+
+    &:focus {
+      border-color: $white;
+      color: $white;
+    }
+  }
+}

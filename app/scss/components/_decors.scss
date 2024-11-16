@@ -1,0 +1,15 @@
+.decor-1 {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 87%;
+  @include objectCoverBg;
+}
+
+.decor-3 {
+  @include objectCoverBg;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
