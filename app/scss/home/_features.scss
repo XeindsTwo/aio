@@ -1,0 +1,139 @@
+.features {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    left: -10%;
+    top: -80px;
+    z-index: 50;
+    border-radius: 1200px;
+    background: #5B4DFF;
+    filter: blur(400px);
+    width: 444px;
+    height: 1200px;
+  }
+
+  &::after {
+    @include pseudo;
+    right: 0;
+    z-index: 50;
+    bottom: -80px;
+    height: 800px;
+    width: 590px;
+    border-radius: 800px;
+    background: #7B2FFF;
+    filter: blur(400px);
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.96px;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 40px;
+  }
+
+  &__top, &__bottom {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  &__top {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__card {
+    @include bg;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+
+    &.one {
+      background-image: url("../images/features/features-1.webp");
+    }
+
+    &.two {
+      background-image: url("../images/features/features-2.webp");
+    }
+
+    &.three {
+      background-image: url("../images/features/features-3.webp");
+    }
+
+    &.four {
+      background-image: url("../images/features/features-4.webp");
+      min-height: 380px;
+    }
+
+    &.five {
+      background-image: url("../images/features/features-5.webp");
+      min-height: 380px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--one {
+      top: 27px;
+      left: 47px;
+    }
+
+    &--two {
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--three {
+      top: -2px;
+    }
+
+    &--five {
+      left: 50%;
+      transform: translateX(-47%);
+      bottom: 0;
+      top: auto;
+    }
+  }
+
+  &__content {
+    margin-top: 214px;
+    text-align: center;
+    padding: 0 16px 48px;
+
+    &.non-top {
+      margin-top: 24px;
+    }
+  }
+
+  &__name {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 auto 12px;
+    position: relative;
+    z-index: 60;
+
+    &.short-name {
+      max-width: 220px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    color: #D4CCFF;
+
+    &.short-text {
+      max-width: 270px;
+    }
+  }
+}
