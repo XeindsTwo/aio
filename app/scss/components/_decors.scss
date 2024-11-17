@@ -17,7 +17,7 @@
 .decor-3 {
   @include objectCoverBg;
   position: absolute;
-  bottom: 0;
+  bottom: -120px;
   width: 100%;
   z-index: -1;
   @include r($tablet) {
