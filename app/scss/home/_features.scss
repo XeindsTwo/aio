@@ -11,6 +11,9 @@
     filter: blur(400px);
     width: 444px;
     height: 1200px;
+    @include r($tablet) {
+      opacity: .8;
+    }
   }
 
   &::after {
@@ -23,6 +26,9 @@
     border-radius: 800px;
     background: #7B2FFF;
     filter: blur(400px);
+    @include r($tablet) {
+      opacity: .6;
+    }
   }
 
   &__title {
@@ -33,20 +39,51 @@
     text-align: center;
     max-width: 820px;
     margin: 0 auto 40px;
+    position: relative;
+    z-index: 50;
+    @media (max-width: 1100px) {
+      font-size: 44px;
+    }
+    @include r($lg) {
+      font-size: 40px;
+    }
+    @media (max-width: 860px) {
+      font-size: 36px;
+      max-width: 730px;
+    }
+    @include r($tablet) {
+      font-size: 34px;
+    }
   }
 
   &__top, &__bottom {
     display: grid;
     grid-gap: 20px;
+    @media (max-width: 850px) {
+      grid-gap: 14px;
+    }
   }
 
   &__top {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
+    @media (max-width: 850px) {
+      margin-bottom: 14px;
+    }
+    @include r($tablet) {
+      max-width: 420px;
+      margin: 0 auto 14px;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__bottom {
     grid-template-columns: repeat(2, 1fr);
+    @include r($tablet) {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 420px;
+      margin: 0 auto;
+    }
   }
 
   &__card {
@@ -54,6 +91,9 @@
     border-radius: 18px;
     overflow: hidden;
     position: relative;
+    @media (max-width: 850px) {
+      border-radius: 14px;
+    }
 
     &.one {
       background-image: url("../images/features/features-1.webp");
@@ -70,11 +110,23 @@
     &.four {
       background-image: url("../images/features/features-4.webp");
       min-height: 380px;
+      @media (max-width: 920px) {
+        min-height: 360px;
+      }
+      @media (max-width: 860px) {
+        min-height: 330px;
+      }
     }
 
     &.five {
       background-image: url("../images/features/features-5.webp");
       min-height: 380px;
+      @media (max-width: 920px) {
+        min-height: 360px;
+      }
+      @media (max-width: 860px) {
+        min-height: 330px;
+      }
     }
   }
 
@@ -82,27 +134,97 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 50;
 
     &--one {
       top: 27px;
       left: 47px;
+      @media (max-width: 1040px) {
+        width: auto;
+        height: 150px;
+        left: 37px;
+      }
+      @include r($lg) {
+        height: 140px;
+        left: 42px;
+      }
+      @media (max-width: 920px) {
+        height: 130px;
+        left: 36px;
+      }
+      @media (max-width: 880px) {
+        left: 26px;
+      }
+      @media (max-width: 840px) {
+        height: 120px;
+        left: 30px;
+        top: 33px;
+      }
+      @include r($tablet) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     &--two {
       top: 8px;
       left: 50%;
       transform: translateX(-50%);
+      @media (max-width: 1040px) {
+        width: auto;
+        height: 160px;
+      }
+      @include r($lg) {
+        height: 150px;
+        top: 20px;
+      }
+      @media (max-width: 920px) {
+        height: 135px;
+        top: 26px;
+      }
+      @media (max-width: 850px) {
+        height: 130px;
+      }
     }
 
     &--three {
       top: -2px;
+      @media (max-width: 1040px) {
+        width: auto;
+        height: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include r($lg) {
+        height: 178px;
+      }
+      @media (max-width: 920px) {
+        height: 164px;
+        top: 4px;
+      }
+      @media (max-width: 850px) {
+        height: 150px;
+      }
+    }
+
+    &--four {
+      bottom: -15px;
+      top: auto;
     }
 
     &--five {
       left: 50%;
       transform: translateX(-47%);
-      bottom: 0;
+      bottom: -50px;
       top: auto;
+      @media (max-width: 920px) {
+        width: auto;
+        height: 290px;
+      }
+      @media (max-width: 860px) {
+        height: 250px;
+        bottom: -10px;
+      }
     }
   }
 
@@ -110,6 +232,13 @@
     margin-top: 214px;
     text-align: center;
     padding: 0 16px 48px;
+    @media (max-width: 1040px) {
+      margin-top: 200px;
+      padding-bottom: 34px;
+    }
+    @media (max-width: 840px) {
+      margin-top: 180px;
+    }
 
     &.non-top {
       margin-top: 24px;
@@ -122,6 +251,10 @@
     margin: 0 auto 12px;
     position: relative;
     z-index: 60;
+    @include r($lg) {
+      font-size: 20px;
+      line-height: 1.3;
+    }
 
     &.short-name {
       max-width: 220px;
@@ -132,7 +265,7 @@
     margin: 0 auto;
     color: #D4CCFF;
     position: relative;
-    z-index: 50;
+    z-index: 52;
 
     &.short-text {
       max-width: 270px;
