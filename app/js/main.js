@@ -12,8 +12,7 @@ document.querySelectorAll(".desktop").forEach(link => {
 
     if (targetSection) {
       const currentScrollPos = window.scrollY;
-      const headerHeight = header ? header.offsetHeight : 0;
-      const offsetTop = targetSection.getBoundingClientRect().top + currentScrollPos - headerHeight;
+      const offsetTop = targetSection.getBoundingClientRect().top + currentScrollPos - 30;
 
       window.scrollTo({
         top: offsetTop,
