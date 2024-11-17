@@ -12,11 +12,63 @@
     line-height: 1.14;
     max-width: 555px;
     margin: 0 auto 48px;
+    @include r($lg) {
+      font-size: 36px;
+      max-width: 500px;
+    }
+    @include r($tablet) {
+      font-size: 34px;
+      max-width: 470px;
+    }
+    @include r($sm) {
+      font-size: 32px;
+      max-width: 420px;
+    }
+    @media (max-width: 530px) {
+      font-size: 30px;
+      max-width: 400px;
+    }
+    @media (max-width: 440px) {
+      font-size: 28px;
+      max-width: 370px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 410px) {
+      font-size: 26px;
+      max-width: 350px;
+      margin-bottom: 36px;
+    }
+    @media (max-width: 380px) {
+      font-size: 25px;
+    }
   }
 
   &__links {
     @include flex-align-center(20);
     justify-content: center;
+    @include r($tablet) {
+      gap: 14px;
+    }
+    @include r($sm) {
+      flex-wrap: wrap;
+    }
+
+    &-socials {
+      @include flex-align-center(20);
+      @include r($tablet) {
+        gap: 14px;
+      }
+
+      .home__link {
+        @include r($phone) {
+          font-size: 14px;
+          padding: 14px 18px;
+        }
+        @media (max-width: 390px) {
+          padding: 14px 15px;
+        }
+      }
+    }
   }
 
   &__link {
@@ -30,6 +82,9 @@
     box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
     backdrop-filter: blur(8px);
     transition: background-color .4s, border .4s, color .4s;
+    @include r($sm) {
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: $accent;

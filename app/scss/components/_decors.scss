@@ -4,6 +4,14 @@
   right: 0;
   width: 87%;
   @include objectCoverBg;
+  @include r($desktop) {
+    height: 750px;
+    width: 80%;
+  }
+  @media (max-width: 860px) {
+    width: 100%;
+    height: 1000px;
+  }
 }
 
 .decor-3 {

@@ -1,14 +1,26 @@
 .header {
   margin: 32px 0 40px;
+  @include r($lg) {
+    margin: 24px 0 36px;
+  }
+  @include r($tablet) {
+    margin: 20px 0 44px;
+  }
+  @include r($sm) {
+    margin-top: 15px;
+  }
 
   &__inner {
     @include flex-align-center(12);
     justify-content: center;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
     img {
-
+      @include objectCoverBg;
     }
   }
 
@@ -21,6 +33,12 @@
     background-blend-mode: soft-light;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 51, 0.10);
     backdrop-filter: blur(8px);
+    @include r($sm) {
+      gap: 23px;
+    }
+    @media (max-width: 530px) {
+      padding: 7px 19px;
+    }
   }
 
   &__link {
@@ -32,6 +50,9 @@
     transition: color .4s, border .4s;
     @media (max-width: 1300px) {
       max-width: max-content;
+    }
+    @media (max-width: 860px) {
+      font-size: 17px;
     }
     @include r($sm) {
       font-size: 16px;

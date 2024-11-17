@@ -131,6 +131,8 @@
   &__text {
     margin: 0 auto;
     color: #D4CCFF;
+    position: relative;
+    z-index: 50;
 
     &.short-text {
       max-width: 270px;

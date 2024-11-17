@@ -16,6 +16,9 @@
   background-color: #050014;
   position: relative;
   overflow-x: hidden;
+  @include r($sm) {
+    font-size: 15px;
+  }
 
   &.active::before {
     opacity: 1;
