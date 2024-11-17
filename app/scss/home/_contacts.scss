@@ -2,6 +2,18 @@
   position: relative;
   margin-bottom: 0;
   padding-bottom: 120px;
+  @include r($lg) {
+    padding-bottom: 90px;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 560px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 510px) {
+    padding-bottom: 60px;
+  }
 
   &__title {
     font-size: 40px;
@@ -13,6 +25,34 @@
     margin: 0 auto 40px;
     position: relative;
     z-index: 50;
+    @include r($lg) {
+      font-size: 36px;
+      max-width: 500px;
+    }
+    @media (max-width: 860px) {
+      font-size: 34px;
+      max-width: 460px;
+    }
+    @include r($tablet) {
+      font-size: 32px;
+      max-width: 430px;
+    }
+    @include r($sm) {
+      font-size: 30px;
+      max-width: 410px;
+    }
+    @media (max-width: 530px) {
+      font-size: 28px;
+      max-width: 390px;
+    }
+    @include r($phone) {
+      font-size: 26px;
+      max-width: 355px;
+    }
+    @media (max-width: 390px) {
+      font-size: 25px;
+      line-height: 1.2;
+    }
   }
 
   &__links {
@@ -20,15 +60,22 @@
     justify-content: center;
     position: relative;
     z-index: 50;
+    @media (max-width: 410px) {
+      gap: 14px 10px;
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
     @include flex-align-center(8);
     border-radius: 10px;
     padding: 12px 18px;
-    background-color: #1F115D;
+    background-color: #291779;
     border: 1px solid #3b2793;
     transition: background-color .4s, color .4s, border .4s;
+    @media (max-width: 390px) {
+      padding: 13px 14px;
+    }
 
     &:hover {
       background-color: transparent;
