@@ -21,6 +21,9 @@
     @include r($sm) {
       border-radius: 16px;
     }
+    @include r($phone) {
+      padding-top: 26px;
+    }
   }
 
   &__title {
@@ -70,6 +73,13 @@
     }
     @media (max-width: 440px) {
       font-size: 15px;
+      margin-bottom: 26px;
+    }
+
+    span {
+      @include r($phone) {
+        display: none;
+      }
     }
   }
 
@@ -94,8 +104,27 @@
       height: 200px;
     }
     @include r($phone) {
-      width: 96%;
       margin: -30px auto 0;
+    }
+    @media (max-width: 420px) {
+      display: none;
+    }
+
+    &.mobile {
+      display: none;
+      @media (max-width: 420px) {
+        display: block;
+        height: 155px;
+        width: 95%;
+        margin-top: 32px;
+      }
+      @media (max-width: 400px) {
+        height: 145px;
+        object-position: top;
+      }
+      @media (max-width: 380px) {
+        height: 138px;
+      }
     }
   }
 }
