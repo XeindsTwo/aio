@@ -14,6 +14,9 @@
     @include r($tablet) {
       opacity: .8;
     }
+    @include r($phone) {
+      opacity: .6;
+    }
   }
 
   &::after {
@@ -167,6 +170,9 @@
     top: 0;
     left: 0;
     z-index: 50;
+    @include r($phone) {
+      z-index: 54;
+    }
 
     &--one {
       top: 27px;
@@ -193,7 +199,9 @@
         top: 33px;
       }
       @include r($tablet) {
-        position: static;
+        position: relative;
+        left: 0;
+        top: 0;
         height: 170px;
         margin: 22px auto 0;
         transform: translateX(8px) translateY(0);
@@ -226,7 +234,9 @@
         height: 130px;
       }
       @include r($tablet) {
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
         transform: none;
         margin: 30px auto 0;
         height: 160px;
@@ -261,7 +271,9 @@
         height: 255px;
         margin: 0 auto;
         transform: none;
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
       }
       @include r($phone) {
         height: auto;
@@ -303,6 +315,7 @@
         width: 105%;
         left: 0;
         transform: translateX(0);
+        z-index: 49;
       }
     }
   }
